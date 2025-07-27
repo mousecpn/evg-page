@@ -439,7 +439,7 @@
             </p>
           </div>
           <div class="content has-text-centered">
-              <img src="./static/videos/equi_demo.png" alt="Robot Trajectron V2 Logo" width="100%" />
+              <img src="./static/assets/imgs/equi_demo.png" alt="demo for equivariance" width="100%" />
             </div>
         </div>
       </div>
@@ -466,7 +466,8 @@
           <h2 class="title is-3">Equivariant Triplane UNet</h2>
           <img src="./static/assets/imgs/triunet.png" alt="Model Pipeline Diagram" class="fig" width="100%"/>
         </div>
-        <div class="content has-text-justified">
+      </div>
+      <div class="content has-text-justified">
           <p>
             This figure considers a workspace that contains a yellow cone and a blue box. 
             As the workspace rotates by increments of 90°, the XY plane also rotates accordingly, but the XZ and YZ planes transform differently: Every time the workspace rotates 90°, the YZ plane becomes the previous XZ plane, and the XZ plane becomes a flipped copy of the previous YZ plane. 
@@ -474,7 +475,6 @@
             Thus, a <em>sum</em> of matching features in the XZ and YZ planes is <em>invariant</em> to C4 transformation. Since the figure above lists C4 transformations exhaustively, this observation is in fact a general rule, which defines the tri-plane feature transformation under C4 group actions. 
           </p>
         </div>
-      </div>
     </div>
   </section>
 
