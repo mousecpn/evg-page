@@ -405,7 +405,7 @@
             <!-- Navigation Links -->
             <div class="linkscontainer" style="margin-top: 1.5rem;">
               <div class="links">
-                <a href="#" class="button-link" aria-label="Paper">
+                <a href="https://arxiv.org/abs/2507.18847" class="button-link" aria-label="Paper">
                   <span class="material-symbols-rounded">description</span>
                   Paper
                 </a>
@@ -455,6 +455,14 @@
           <img src="./static/assets/imgs/triequi.png" alt="Key Insight Diagram" class="fig" width="80%"/>
         </div>
       </div>
+      <div class="content has-text-justified">
+          <p>
+            This figure considers a workspace that contains a yellow cone and a blue box. 
+            As the workspace rotates by increments of 90°, the XY plane also rotates accordingly, but the XZ and YZ planes transform differently: Every time the workspace rotates 90°, the YZ plane becomes the previous XZ plane, and the XZ plane becomes a flipped copy of the previous YZ plane. 
+            This observation forms a key intuition of our paper. Let us consider a feature queried at the point located by the star in the figure. Observing the XZ and YZ planes, we see that, for all rotations of the scene, the query point always points at no object at all in one plane, and at the yellow cone on the other plane. 
+            Thus, a <em>sum</em> of matching features in the XZ and YZ planes is <em>invariant</em> to C4 transformation. Since the figure above lists C4 transformations exhaustively, this observation is in fact a general rule, which defines the tri-plane feature transformation under C4 group actions. 
+          </p>
+        </div>
     </div>
   </section>
 
@@ -467,14 +475,6 @@
           <img src="./static/assets/imgs/triunet.png" alt="Model Pipeline Diagram" class="fig" width="100%"/>
         </div>
       </div>
-      <div class="content has-text-justified">
-          <p>
-            This figure considers a workspace that contains a yellow cone and a blue box. 
-            As the workspace rotates by increments of 90°, the XY plane also rotates accordingly, but the XZ and YZ planes transform differently: Every time the workspace rotates 90°, the YZ plane becomes the previous XZ plane, and the XZ plane becomes a flipped copy of the previous YZ plane. 
-            This observation forms a key intuition of our paper. Let us consider a feature queried at the point located by the star in the figure. Observing the XZ and YZ planes, we see that, for all rotations of the scene, the query point always points at no object at all in one plane, and at the yellow cone on the other plane. 
-            Thus, a <em>sum</em> of matching features in the XZ and YZ planes is <em>invariant</em> to C4 transformation. Since the figure above lists C4 transformations exhaustively, this observation is in fact a general rule, which defines the tri-plane feature transformation under C4 group actions. 
-          </p>
-        </div>
     </div>
   </section>
 
