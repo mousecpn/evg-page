@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <meta name="description" content="Equivariant Volumetric Grasping">
   <meta name="keywords" content="Robotic Manipulation, Grasping, Equivariant Networks, Volumetric Grasping">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -475,6 +476,13 @@
           <img src="./static/assets/imgs/triunet.png" alt="Model Pipeline Diagram" class="fig" width="100%"/>
         </div>
       </div>
+      <div class="content has-text-justified">
+          <p>
+          As shown in Figure above, we propose a dual-branch network to encode the tri-plane feature. The first branch processes the XY plane. 
+          It consists of a steerable-CNN UNet designed for equivariance to <var>g</var> &isin; C<sub>4</sub>,, and it yields a refined table-plane feature field \( \hat{f}_{\text{xy}} \). 
+          The second branch, \(h_{\text{s}}(\cdot)\), processes the XZ and YZ planes. It consists of a reflection-invariant UNet and yields \(\hat{f}_{\text{xz}}\) and \(\hat{f}_{\text{yz}}\).
+          </p>
+        </div>
     </div>
   </section>
 
